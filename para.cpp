@@ -39,7 +39,7 @@ tf::Task minf_of(tf::Taskflow& taskflow, B beg, E end, T& init, O bop) {
 template <typename B, typename E, typename T, typename O>
 tf::Task allf_of(tf::Taskflow& taskflow, B beg, E end, T& init, O bop) {
 
-    
+    // o workey, no goody :( will doodey tommorowey
     auto reduce_bop = [&] (int l, int r) mutable throw() -> int
     { 
         auto [init_, cond, yes, no] = taskflow.emplace(
